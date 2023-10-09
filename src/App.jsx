@@ -7,8 +7,8 @@ function App() {
 	return (
 		<div>
 			<p>Iniciando proyecto React</p>
-			<MiApi />
 			<Buscador />
+			<MiApi />
 		</div>
 	);
 }
