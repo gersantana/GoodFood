@@ -1,0 +1,50 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+body{
+    font-size: 1.6rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.nav-bar{
+    min-height: 5rem;
+    background-color: rgba(85, 104, 146, 0.596);
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(1rem);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hero{
+    margin-top: 5rem;
+    height: 35rem;
+    background-color: antiquewhite;
+}
+
+.main_container {
+    margin-top: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.grid_main {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+footer {
+    min-height: 10rem;
+    background-color: rgb(123, 127, 131);
+    min-width: 100vw;
+}

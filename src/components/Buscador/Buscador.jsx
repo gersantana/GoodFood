@@ -11,10 +11,10 @@ const Buscador = () => {
 
 	return (
 		<>
-			<div>
-				<form>
+			<div className="container_buscador">
+				<form className="">
 					<label htmlFor="filter">Buscador:</label>
-					<input placeholder="Filtra tu busqueda" type="text" name={filtro} id="filter" onChange={evento} />
+					<input className="" placeholder="Filtra tu busqueda" type="text" name={filtro} id="filter" onChange={evento} />
 				</form>
 			</div>
 		</>
