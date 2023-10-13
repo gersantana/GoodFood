@@ -1,3 +1,10 @@
+
 .container_buscador {
-    /* margin-top: rem; */
+height: 10rem;
+display: flex;
 }
+
+.container_buscador label {
+    color: white;
+}
+

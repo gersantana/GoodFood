@@ -1,50 +1,77 @@
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    min-height: 100vh;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	/* min-width: 100vh; */
 }
 
-body{
-    font-size: 1.6rem;
+body {
+	font-size: 1.6rem;
+	min-width: 100vw;
 }
-img{
-    max-width: 100%;
-    display: block;
+img {
+	max-width: 100%;
+	display: block;
 }
 
-.nav-bar{
-    min-height: 5rem;
-    background-color: rgba(85, 104, 146, 0.596);
-    position: fixed;
-    top: 0;
-    backdrop-filter: blur(1rem);
+.nav-bar {
+	min-height: 6rem;
+	background-color: rgba(85, 104, 146, 0.596);
+	position: fixed;
+	top: 0;
+	backdrop-filter: blur(1rem);
+	z-index: 1;
+    font-size: 2rem;
+    padding: 0 2rem ;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
-.hero{
-    margin-top: 5rem;
-    height: 35rem;
-    background-color: antiquewhite;
+.hero {
+	margin-top: 5rem;
+	height: 55rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.705)), url("https://images.unsplash.com/photo-1489089905289-5c91ae6e2544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-position: 0rem -60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_hero {
+    width: 100rem;
+    padding: 2rem;
+}
+.hero h1{
+    color: white;
+    font-size: 5rem;
+}
+
+.hero p {
+    color: white;
+    font-size: 2rem;
 }
 
 .main_container {
-    margin-top: 2rem;
-    max-width: 120rem;
-    margin: 0 auto;
+	margin-top: 2rem;
+	max-width: 120rem;
+	margin: 0 auto;
 }
-
 .grid_main {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+	display: grid;
+	justify-items: center;
+	gap: 2rem;
+    margin: 3rem 3rem;
+}
+@media (min-width: 500px) {
+	.grid_main {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
 }
 
 footer {
-    min-height: 10rem;
-    background-color: rgb(123, 127, 131);
-    min-width: 100vw;
+	min-height: 10rem;
+	background-color: rgb(123, 127, 131);
+	min-width: 100vw;
 }
