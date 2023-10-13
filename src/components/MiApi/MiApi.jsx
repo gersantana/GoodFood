@@ -1,20 +1,20 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import propsTypes from "prop-types"
 import "./MiApi.css";
 
 const MiApi = ({ setData, urlApi, render}) => {
-
 
 	const callApi = async () => {
 		try {
 		const response = await fetch(urlApi);
 		const datos = await response.json();
 		setData(datos.meals);
-		// setOriginalData(datos.meals);
-		} catch (error) {
+		} 
+		catch (error) {
 			console.error(`Error al cargar datos de la api`)
-		}
-		
+		}		
 	};
+
 	useEffect(() => {
 		callApi();
 	}, []);
@@ -37,5 +37,11 @@ const MiApi = ({ setData, urlApi, render}) => {
 		</>
 	);
 };
+
+MiApi.propTypes = {
+	render: propsTypes.array.isRequired,
+	setData: propsTypes.func.isRequired,
+	urlApi: propsTypes.string.isRequired
+}
 
 export default MiApi;

@@ -1,4 +1,5 @@
 import { useEffect} from "react";
+import propsTypes from "prop-types"
 import "./Buscador.css";
 
 const Buscador = ({ filtro, setFiltro, data, setRender}) => {
@@ -37,5 +38,12 @@ const Buscador = ({ filtro, setFiltro, data, setRender}) => {
 		</>
 	);
 };
+
+Buscador.propTypes = {
+	filtro: propsTypes.string.isRequired,
+	setFiltro: propsTypes.func.isRequired,
+	data: propsTypes.array.isRequired,
+	setRender: propsTypes.func.isRequired
+}
 
 export default Buscador;
