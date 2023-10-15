@@ -25,3 +25,7 @@
     color: black;
 
 }
+
+.alerta {
+    grid-column: 2;
+}

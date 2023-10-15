@@ -1,5 +1,6 @@
 import "./Header.css"
 import Buscador from "../Buscador/Buscador"
+import propsTypes from "prop-types"
 
 const Header = ({filtro, setData, setFiltro, data, setRender}) => {
   return (
@@ -35,6 +36,14 @@ const Header = ({filtro, setData, setFiltro, data, setRender}) => {
 				</div>
 			</header>
   )
+}
+
+Header.propTypes = {
+	filtro: propsTypes.string.isRequired,
+	setData: propsTypes.func.isRequired,
+	setFiltro: propsTypes.func.isRequired, 
+	data: propsTypes.array.isRequired, 
+	setRender: propsTypes.func.isRequired
 }
 
 export default Header
