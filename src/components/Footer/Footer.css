@@ -4,7 +4,16 @@ footer {
 	min-width: 100vw;
 }
 
+footer a {
+	transition:  all .3s ease;
+	font-size: 1.4rem;
+}
+
 footer a:hover {
 	color: rgb(25, 83, 83);
 	text-decoration: underline;
+}
+
+footer p {
+	font-size: 1.4rem;
 }

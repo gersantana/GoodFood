@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import propsTypes from "prop-types";
 import "./MiApi.css";
 
-const MiApi = ({ setData, urlApi, render }) => {
+const MiApi = ({ setData, urlApi, render, mensaje }) => {
 	const callApi = async () => {
 		try {
 			const response = await fetch(urlApi);
@@ -18,7 +18,7 @@ const MiApi = ({ setData, urlApi, render }) => {
 	}, []);
 
 	return (
-		<>
+		<div className="grid_main">
 			{render?.map((ele) => {
 				return (
 					<div className="card" key={ele.idMeal}>
@@ -26,28 +26,29 @@ const MiApi = ({ setData, urlApi, render }) => {
 							<img src={ele.strMealThumb} alt="meal" />
 						</div>
 						<div className="card_body_container">
-							<p>Platillo: {ele.strMeal}</p>
-							<p>Origen: {ele.strArea}</p>
-						</div>
-						<div className="container_buttons">
-							<div className="cont_btn">
-								<a target="blank" href={ele.strSource}>
-									Ingredientes
-								</a>
-							</div>
-							<div className="cont_btn">
-								<a target="blank" href={ele.strYoutube}>
-									Preparacion
-								</a>
+							<p>
+								Platillo: <span>{ele.strMeal}</span>
+							</p>
+							<p>
+								Origen: <span>{ele.strArea}</span>
+							</p>
+							<div className="container_buttons">
+								<div className="cont_btn">
+									<a target="blank" href={ele.strSource}>
+										Ingredientes
+									</a>
+								</div>
+								<div className="cont_btn">
+									<a target="blank" href={ele.strYoutube}>
+										Preparacion
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				);
 			})}
-			<div className="d-flex justify-content-center alerta">
-			{render.length === 0 && <p className={"alert alert-danger mt-5"}>No hay coincidencias para tu "BÚSQUEDA"</p>}
-			</div>
-		</>
+		</div>
 	);
 };
 

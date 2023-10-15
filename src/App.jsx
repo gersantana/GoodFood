@@ -3,6 +3,7 @@ import "./App.css";
 import MiApi from "./components/MiApi/MIapi";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Alert from "./components/Alert/Alert";
 
 function App() {
 	const urlApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
@@ -13,7 +14,8 @@ function App() {
 	return (
 		<>
 			<Header data={data} filtro={filtro} setFiltro={setFiltro} setRender={setRender} setData={setData} />
-			<main className="main_container grid_main">
+			<main className="main_container">
+				<Alert render={render} mensaje={`No hay coincidencias para tu "BÚSQUEDA"`}/>
 				<MiApi data={data} setData={setData} urlApi={urlApi} render={render} />
 			</main>
 			<Footer />

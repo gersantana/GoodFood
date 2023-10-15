@@ -11,9 +11,15 @@
 
 }
 
+.nav-bar a{
+    transition: all .3s ease;
+
+}
+
 .nav-bar a:hover {
 	color:rgb(179, 179, 179);
 	text-decoration: underline;
+
 }
 
 .hero {
