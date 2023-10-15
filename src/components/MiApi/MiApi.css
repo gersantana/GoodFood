@@ -8,3 +8,20 @@
 .img_container img {
     border-radius: 1rem;
 }
+
+.container_buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.cont_btn {
+    background-color: rgb(20, 101, 177);
+    padding: .5rem  1.5rem;
+    border-radius: 1rem;
+}
+
+.container_buttons a {
+    color: black;
+
+}

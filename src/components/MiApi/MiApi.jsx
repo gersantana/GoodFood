@@ -25,11 +25,19 @@ const MiApi = ({ setData, urlApi, render}) => {
 				return (
 					<div className="card" key={ele.idMeal}>
 						<div className="img_container">
-							<img src={ele.strMealThumb} alt="" />
+							<img src={ele.strMealThumb} alt="meal" />
 						</div>
 						<div className="card_body_container">
-							<p>Nombre:{ele.strMeal}</p>
-							<p>Apellido:{ele.strArea}</p>
+							<p>Platillo: {ele.strMeal}</p>
+							<p>Origen: {ele.strArea}</p>
+						</div>
+						<div className="container_buttons">
+							<div className="cont_btn">
+								<a target="blank" href={ele.strSource}>Ingredientes</a>
+							</div>
+							<div className="cont_btn">
+								<a target="blank" href={ele.strYoutube}>Preparacion</a>
+							</div>
 						</div>
 					</div>
 				);

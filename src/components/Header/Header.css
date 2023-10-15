@@ -1,0 +1,40 @@
+.nav-bar {
+	min-height: 6rem;
+	background-color: rgba(55, 65, 87, 0.815);
+	position: fixed;
+	top: 0;
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+	z-index: 1;
+    font-size: 2rem;
+    padding: 0 2rem ; 
+
+}
+
+.nav-bar a:hover {
+	color:rgb(179, 179, 179);
+	text-decoration: underline;
+}
+
+.hero {
+	height: 60rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.705)), url("https://images.unsplash.com/photo-1489089905289-5c91ae6e2544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-position: 0rem -60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_hero {
+    width: 100rem;
+    padding: 2rem;
+}
+.hero h1{
+    color: white;
+    font-size: 5rem;
+}
+
+.hero p {
+    color: white;
+    font-size: 2rem;
+}

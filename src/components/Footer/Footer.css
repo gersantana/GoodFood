@@ -1,0 +1,10 @@
+footer {
+	min-height: 10rem;
+	background-color: rgb(154, 157, 160);
+	min-width: 100vw;
+}
+
+footer a:hover {
+	color: rgb(25, 83, 83);
+	text-decoration: underline;
+}
