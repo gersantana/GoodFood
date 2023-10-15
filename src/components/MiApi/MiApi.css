@@ -37,12 +37,12 @@ span {
 .container_buttons {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     gap: .5rem;
+    color: white;
 }
 
 .cont_btn {
-    background-color: rgb(20, 101, 177);
+    background-color: rgb(255, 94, 0);  
     padding: .8rem  .8rem;
     border-radius: 1rem;
     transition: all .3s ease;   
@@ -51,9 +51,3 @@ span {
     background-color:  rgb(44, 89, 131);
     text-decoration: underline white;
 }
-
-.container_buttons a {
-    color: white;
-
-}
-

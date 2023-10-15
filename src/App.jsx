@@ -15,6 +15,7 @@ function App() {
 		<>
 			<Header data={data} filtro={filtro} setFiltro={setFiltro} setRender={setRender} setData={setData} />
 			<main className="main_container">
+				<h2 className="text-center px-5 mt-5">Busca el platillo de tu preferencia y podrás encontrar todo la información referente, origen, ingredientes, preparación y videos tutoriales...</h2>
 				<Alert render={render} mensaje={`No hay coincidencias para tu "BÚSQUEDA"`}/>
 				<MiApi data={data} setData={setData} urlApi={urlApi} render={render} />
 			</main>

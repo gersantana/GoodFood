@@ -5,15 +5,14 @@ import propsTypes from "prop-types"
 const Header = ({filtro, setData, setFiltro, data, setRender}) => {
   return (
     <header id="inicio">
-				<nav className="nav-bar d-flex container-fluid justify-content-around align-items-center flex-wrap gap-5">
+				<nav className="nav-bar gap-5">
 					<div>
-						<a className="m-0" href="#inicio">
+						{/* <a className="m-0" href="#inicio">
 							<img src="" alt="logo" />
-						</a>
-						{/* <p >LOGO</p> */}
+						</a> */}
+						<p className="m-0 logo"><span>Good</span>Food <span>:)</span></p>
 					</div>
 					<ul className="d-flex gap-5 m-0">
-						{/* <li><Buscador /> </li> */}
 						<li>
 							<a href="#inicio">Inicio</a>
 						</li>
@@ -27,8 +26,8 @@ const Header = ({filtro, setData, setFiltro, data, setRender}) => {
 				</nav>
 				<div id="" className="hero">
 					<div className="content_hero">
-						<h1>Titulo de la pagina</h1>
-						<p>Gastronomia del mundo </p>
+						<h1>Good<span>Food.</span></h1>
+						<p>Gastronomía mundial a un click. </p>
 						<Buscador filtro={filtro} setFiltro={setFiltro} setData={setData} data={data} setRender={setRender} />
 						<p>Cada lugar, un sabor!!!</p>
 						<span id="productos"></span>

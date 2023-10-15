@@ -17,7 +17,8 @@ const Buscador = ({ filtro, setFiltro, data, setRender}) => {
 			const dataFiltrada = data.filter((ele) => {
 				return (
 				ele.strMeal.toLowerCase().includes(filtro.toLowerCase()) ||
-				ele.strArea.toLowerCase().includes(filtro.toLowerCase())
+				ele.strArea.toLowerCase().includes(filtro.toLowerCase()) ||
+				ele.strCategory.toLowerCase().includes(filtro.toLowerCase()) 
 			)
 		})
 			setRender(dataFiltrada);

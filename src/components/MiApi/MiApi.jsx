@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import propsTypes from "prop-types";
 import "./MiApi.css";
 
-const MiApi = ({ setData, urlApi, render, mensaje }) => {
+const MiApi = ({ setData, urlApi, render}) => {
 	const callApi = async () => {
 		try {
 			const response = await fetch(urlApi);
@@ -32,6 +32,9 @@ const MiApi = ({ setData, urlApi, render, mensaje }) => {
 							<p>
 								Origen: <span>{ele.strArea}</span>
 							</p>
+							<p>
+								Categoría: <span>{ele.strCategory}</span>
+							</p>
 							<div className="container_buttons">
 								<div className="cont_btn">
 									<a target="blank" href={ele.strSource}>
@@ -40,7 +43,7 @@ const MiApi = ({ setData, urlApi, render, mensaje }) => {
 								</div>
 								<div className="cont_btn">
 									<a target="blank" href={ele.strYoutube}>
-										Preparacion
+										Preparación
 									</a>
 								</div>
 							</div>
@@ -56,6 +59,7 @@ MiApi.propTypes = {
 	render: propsTypes.array.isRequired,
 	setData: propsTypes.func.isRequired,
 	urlApi: propsTypes.string.isRequired,
+	mensaje: propsTypes.string.isRequired
 };
 
 export default MiApi;
