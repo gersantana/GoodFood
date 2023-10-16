@@ -9,6 +9,10 @@ www.themealdb.com .
 
 2-Agrega un filtro en la cual se puede buscar los platillos por, nombre, origen y categoría o cualquier palabra que coincida con la búsqueda.
 
+(ojo)me pase unos minutos la prensetacion de mi video. ver 1.5 de velocidad
+
 video: https://youtu.be/5A-xJPTVq5k
 
-Demo:https://gersantana.github.io/GoodFood/
+Demo: https://gersantana.github.io/GoodFood/
+
+
