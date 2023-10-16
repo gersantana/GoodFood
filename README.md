@@ -1,8 +1,13 @@
-# React + Vite
+# GooDFood landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pagina web para prueba final de modulo de react 1 para curso de DWFS.
 
-Currently, two official plugins are available:
+Pagina realizada con: hml, css, js, react, node, boostrap.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1-Muestra comidas típicas de varias zonas del mundo cargadas de una Api publica. 
+www.themealdb.com
+2-Agrega un filtro en la cual se puede buscar los platillos por, nombre, origen y categoría o cualquier palabra que coincida con la búsqueda.
+
+video: https://youtu.be/5A-xJPTVq5k
+
+Demo;

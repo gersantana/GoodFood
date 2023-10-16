@@ -24,6 +24,10 @@
 	font-size: 2.4rem;
 }
 
+.nav-bar .logoo:hover {
+    text-decoration: none;
+}
+
 .logo span {
 	color: chocolate;
 }
@@ -65,4 +69,4 @@
 .hero p {
 	color: white;
 	font-size: 2rem;
-}
+}   

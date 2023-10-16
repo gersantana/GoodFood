@@ -6,11 +6,10 @@ const Header = ({filtro, setData, setFiltro, data, setRender}) => {
   return (
     <header id="inicio">
 				<nav className="nav-bar gap-5">
-					<div>
-						{/* <a className="m-0" href="#inicio">
-							<img src="" alt="logo" />
-						</a> */}
-						<p className="m-0 logo"><span>Good</span>Food <span>:)</span></p>
+					<div className="container-logo">
+						<a className="logoo" href="#inicio">
+							<p className="m-0 logo"><span>Good</span>Food <span>:)</span></p>
+						</a>					
 					</div>
 					<ul className="d-flex gap-5 m-0">
 						<li>

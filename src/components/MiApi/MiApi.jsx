@@ -59,7 +59,6 @@ MiApi.propTypes = {
 	render: propsTypes.array.isRequired,
 	setData: propsTypes.func.isRequired,
 	urlApi: propsTypes.string.isRequired,
-	mensaje: propsTypes.string.isRequired
 };
 
 export default MiApi;
